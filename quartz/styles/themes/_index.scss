@@ -4696,4 +4696,51 @@ body {
       text-decoration: none;
     }
   }
+}:root[saved-theme="dark"] {
+  --link-color: #cc9c33 !important;
+  --link-external-color: #cc9c33 !important;
+  --text-accent: #cc9c33 !important;
+  --color-accent-1: #cc9c33 !important;
+  --color-accent-2: #f0a55a !important; // более светлый оттенок для градиентов
+  --nav-item-color-highlighted: #cc9c33 !important;
+  --tag-color: #cc9c33 !important;
+  --pill-color-remove-hover: #cc9c33 !important;
+  --tab-text-color-focused-highlighted: #cc9c33 !important;
+  --collapse-icon-color-collapsed: #cc9c33 !important;
+  --list-marker-color-collapsed: #cc9c33 !important;
+  --graph-node-focused: #cc9c33 !important;
+  --interactive-accent-hsl: 28, 95%, 44% !important; // HSL-код #d97706
 }
+
+a.internal,
+a.external,
+.breadcrumb-container .breadcrumb-element > a,
+footer a {
+  color: #cc9c33 !important;
+}
+
+a.internal.broken {
+  color: #cc9c33 !important;
+}
+
+a.external,
+a.internal,
+.breadcrumb-container .breadcrumb-element > a,
+footer a {
+  text-decoration-color: #cc9c33 !important;
+}
+
+a.internal.broken {
+  text-decoration-color: rgba(204, 156, 51, 0.3) !important; /* цвет #cc9c33 с прозрачностью 0.3 */
+}
+
+/* Скрыть иконки папок */
+.explorer .explorer-content .folder-container:before {
+  display: none !important;
+}
+
+/* Скрыть иконки файлов */
+.explorer .explorer-content ul.explorer-ul li > a:before {
+  display: none !important;
+}
+

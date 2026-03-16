@@ -36,6 +36,13 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
+      mapFn: (node) => {
+    if (node.isFolder) {
+      node.displayName = "🍜 " + node.displayName
+    } else {
+      node.displayName = "📄 " + node.displayName
+    }
+  },
   filterFn: (node) => {
     // Скрываем папки, начинающиеся с "lock"
     if (node.isFolder && node.slugSegment.startsWith("lock")) {
@@ -66,7 +73,22 @@ export const defaultListPageLayout: PageLayout = {
         },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      mapFn: (node) => {
+    if (node.isFolder) {
+      node.displayName = "🍜 " + node.displayName
+    } else {
+      node.displayName = "📄 " + node.displayName
+    }
+  },
+  filterFn: (node) => {
+    // Скрываем папки, начинающиеся с "lock"
+    if (node.isFolder && node.slugSegment.startsWith("lock")) {
+      return false
+    }
+    // Оставляем всё остальное
+    return true
+  }}),
   ],
   right: [],
 }
