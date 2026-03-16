@@ -38,6 +38,9 @@ export default (() => {
 
     return (
       <head>
+        <script>{`
+        document.documentElement.classList.add('dark');
+        с`}</script>
         <title>{title}</title>
         <meta charSet="utf-8" />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (

@@ -33,11 +33,18 @@ export const defaultContentPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+  filterFn: (node) => {
+    // Скрываем папки, начинающиеся с "lock"
+    if (node.isFolder && node.slugSegment.startsWith("lock")) {
+      return false
+    }
+    // Оставляем всё остальное
+    return true
+  }}
+),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
@@ -57,7 +64,6 @@ export const defaultListPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
       ],
     }),
     Component.Explorer(),

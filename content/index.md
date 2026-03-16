@@ -1,22 +1,15 @@
 ---
 title: Главная
 ---
-ТЕ СТ ТЕСТ
 
-## Может быть так лучше?
+Итак, друзья. 
+Поздравляю с успешным переходом по ссылке!
 
-<script src="https://giscus.app/client.js"
-        data-repo="yuraleniviy/no-recipes"
-        data-repo-id="R_kgDORodYow"
-        data-category="Announcements"
-        data-category-id="DIC_kwDORodYo84C4hMO"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ru"
-        crossorigin="anonymous"
-        async>
-</script>
+![[tree.jpg | 200]]
+
+Вы попали на сайт канала NO PEĊEПТОВ. Пока у меня освободилось некоторое время на больничном, решил его сделать.
+
+Скорее читайте первый пост: [[Рецепт №1]]
+
+## Недавние посты
+- [[Рецепт №1]]
