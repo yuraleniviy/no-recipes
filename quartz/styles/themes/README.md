@@ -1,13 +1,13 @@
-# LaTeX
+# Typewriter
 
-- Theme: LaTeX
-- Author: <a href="https://phooey.foo" target="_blank" rel="noopener noreferrer">Ben Finch</a>
+- Theme: Typewriter
+- Author: <a href="https://github.com/crashmoney" target="_blank" rel="noopener noreferrer">crashmoney</a>
 
 ## Preview
 
-[Open live preview (Quartz)](https://quartz-themes.github.io/latex/)
+[Open live preview (Quartz)](https://quartz-themes.github.io/typewriter/)
 
-[Open live preview (Publish)](https://publish.saberzero.one/latex)
+[Open live preview (Publish)](https://publish.saberzero.one/typewriter)
 
 ## Usage (Quartz)
 
@@ -15,7 +15,7 @@
 
 ```yaml
 env:
-  THEME_NAME: latex
+  THEME_NAME: typewriter
 ```
 
 ```yaml
@@ -28,7 +28,7 @@ env:
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh latex
+./action.sh typewriter
 ```
 
 ### Manual install
